@@ -8,7 +8,7 @@ generate_story <- function(noun, verb, adjective, adverb) {
     {verb} {adverb}. It was the funniest thing ever!
   "
   )
-  cat("hi")
+  cat("hi", file = stderr())
 }
 
 ui <- fluidPage(
