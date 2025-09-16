@@ -8,6 +8,7 @@ generate_story <- function(noun, verb, adjective, adverb) {
     {verb} {adverb}. It was the funniest thing ever!
   "
   )
+  cat("hi")
 }
 
 ui <- fluidPage(
@@ -28,9 +29,6 @@ ui <- fluidPage(
 )
 
 server <- function(input, output) {
-
-  cat("hi")
-
   story <- eventReactive(input$submit, {
     generate_story(input$noun1, input$verb, input$adjective, input$adverb)
   })
