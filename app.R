@@ -1,4 +1,5 @@
 library(shiny)
+library(useself)
 
 generate_story <- function(noun, verb, adjective, adverb) {
   glue::glue(
@@ -8,6 +9,8 @@ generate_story <- function(noun, verb, adjective, adverb) {
   "
   )
 }
+
+cat("hi")
 
 ui <- fluidPage(
   titlePanel("Mad Libs Game"),
